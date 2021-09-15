@@ -1,0 +1,13 @@
+<div class="text-center">
+    <h2> {{product.title}} </h2>
+
+    <div class="flex-center">
+        <img class="img" src="{{product.photo}}">
+    </div>
+
+    <h2>Price: {{product.price}} $</h2>
+
+    <button [routerLink]="['/product', product.id]" class="btn btn-gray">More info</button>
+
+    <button [routerLink]="['/cart']" class="btn btn-gray" (click)="addProduct(product)">Add to cart</button>
+</div>

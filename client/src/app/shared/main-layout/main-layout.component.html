@@ -1,0 +1,33 @@
+<nav class="navbar bg-orange">
+    <h2>Shop</h2>
+
+    
+    <ul>
+        <li routerLinkActive="active">
+            <a class="text" (click)="setType('phone')" [routerLink]="['/phone']" [queryParams]="{type: 'phone'}">Phone</a>
+        </li>
+        <li routerLinkActive="active">
+            <a class="text"(click)="setType('tablet')" [routerLink]="['/tablet']">Tablet</a>
+        </li>
+        <li routerLinkActive="active">
+            <a class="text" (click)="setType('laptop')" [routerLink]="['/laptop']">Laptop</a>
+        </li>
+    </ul>
+    
+    <div routerLinkActive="active" class="right-menu">
+            <a routerLinkActive="active" (click)="setType('cart')" [routerLink]="['/cart']">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+            </a>
+
+        <a routerLinkActive="active" [routerLink]="['/admin','dashboard']">
+            <i class="fas fa-user-cog fa-lg"></i>
+            <br>
+            <p class="admin">Admin</p>
+        </a>
+    </div>
+
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

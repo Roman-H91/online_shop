@@ -1,0 +1,26 @@
+.product {
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h2 {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.item {
+    width: 50%;
+    text-align: center;
+}
+
+.img {
+    float: left;
+    max-height: 200px;
+    object-fit: contain;
+}
